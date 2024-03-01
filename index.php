@@ -6,7 +6,9 @@
     <title>PHP</title>
 </head>
 <body>
+    <h1>justin</h1>
     <?php
     echo"justin";
+    ?>
 </body>
 </html>
