@@ -6,6 +6,7 @@
   <title>Document</title>
 </head>
 <body>
+  ASDASD 
 <?php
 session_start();
 $item = $_POST["shopping"];
@@ -22,5 +23,6 @@ else {
 // settinf data on session
 var_dump($_SESSION["array"]) ;
 header("location: /");
+?>
 </body>
 </html>

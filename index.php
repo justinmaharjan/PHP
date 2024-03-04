@@ -1,38 +1,28 @@
 <?php
-session_start();
-$shoppingList =$_SESSION["array"] ?? [];
+// session_start();
+// if(isset($_SESSION['status'])){
+//     if($_SESSION['status'] == "logoff"){
+//         header("Location: /index.php");
+//     }
+// }
+// else{
+//     $_SESSION['status'] = "index";
+// }
 ?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>shopping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
 </head>
 <body>
-  <main>
-    <h1>Shopping Items</h1>
-    <!-- form to submit -->
-    <section>
-      <form action="./add_to_cart.php" method="post">
-        <input type="text" name = "shopping">
-        <button type="submit">add to cart</button>
-      </form>
-    </section>
-    <!-- list -->
-    <section>
-      <h4>Shopping list here</h4>
-      <ul>
-        <?php 
-        foreach($shoppingList as $element){
-          echo "<li>{$element}</li>";
-        }
+    <form action="logout.php" method="post">
+        <?php
+        $_SESSION['status'] = "logoff";
         ?>
-      </ul>
-    </section>
-</main>
+        <h1>hi</h1>
+        <button type="submit">login</button>
+    </form>
 </body>
 </html>
