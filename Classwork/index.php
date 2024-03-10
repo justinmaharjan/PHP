@@ -27,7 +27,7 @@ $result = mysqli_fetch_all($phone_data,MYSQLI_ASSOC);
         <ul>
             <?php
             foreach ($result as $d) {
-                echo "<li>{$d['first_name']}  {$d['middle_name']} {$d['last_name']}    {$d['phone_number']}</li>";
+                echo "<li>{$d['first_name']}  {$d['middle_name']} {$d['last_name']}  {$d['phone_number']}</li>";
             }
             
             ?>
