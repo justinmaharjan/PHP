@@ -12,6 +12,6 @@ class WelcomeController extends Controller
     }
     public static function displayName()
     {
-        return response("justin is my name");
+        return response("justin is my name 🤵");
     }
 }
