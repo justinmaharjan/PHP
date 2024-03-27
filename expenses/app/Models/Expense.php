@@ -5,11 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class UserModel 
+class Expense extends Model
 {
-    public static function all ()
-    {
-        $name = 'Justinn';
-        return $name;
-     }
+    use HasFactory;
 }
